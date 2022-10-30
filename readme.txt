@@ -18,3 +18,7 @@ en el packagejson=== usar el type: "module" y se habilitan.
 	 tailwindcss, autoprefixer, postcss, postcss.cli
 
 	 en terminal hay que instalar el npx tailwindcss init -p
+
+	=== con el ORM 
+	
+	 dependencias. npm i sequelize mysql2
