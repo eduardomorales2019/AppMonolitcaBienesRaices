@@ -11,3 +11,10 @@ en el packagejson=== usar el type: "module" y se habilitan.
 	 Esto significa que, si un proceso de una aplicación experimenta un pico de demanda, se debe escalar toda la arquitectura. Agregar o mejorar las características de una aplicación monolítica se vuelve más complejo a medida que crece la base de código. 
 
 	 Esta complejidad limita la experimentación y dificulta la implementación de nuevas ideas. Las arquitecturas monolíticas aumentan el riesgo de la disponibilidad de la aplicación porque muchos procesos dependientes y estrechamente vinculados aumentan el impacto del error de un proceso. Sin embargo, ofrecen mayor seguridad y control a las grandes empresas. 
+
+
+	 =============================
+	 dependencias de tailwind Css
+	 tailwindcss, autoprefixer, postcss, postcss.cli
+
+	 en terminal hay que instalar el npx tailwindcss init -p

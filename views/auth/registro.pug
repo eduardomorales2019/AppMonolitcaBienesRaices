@@ -1,0 +1,29 @@
+extends ../layout/index
+
+block contenido
+	.py-10
+		h1.text-4xl.my-10.text-center.font-extra-bold Inmo-Puebla 
+			//- span.font-normal Bienes Raices  
+		h2.text-center.text-2xl.font-extrabold= pagina
+
+		.mt-8.mx-auto.max-w-md
+			.bg-white.py-8.px-4.shadow
+				form.space-y-5
+					div
+						label.block.text-sm.uppercase.text-gray-500.font-bold.mb-3.rounded-md(for="nombre") Tu Nombre 
+						input#nombre.w-full.px-3.py-2.border.border-gray-500.placeholder-pink-600(placeholder="" type="text" name="nombre" )
+					div
+						label.block.text-sm.uppercase.text-gray-500.font-bold.mb-3.rounded-md(for="mail") Tu email 
+						input#mail.w-full.px-3.py-2.border.border-gray-500.placeholder-pink-600(placeholder="" type="mail" name="mail" )
+					div
+						label.block.text-sm.uppercase.text-gray-500.font-bold.mb-3.rounded-md(for="password")  Tu Contraseña 
+						input#password.w-full.px-3.py-2.border.border-gray-500.placeholder-pink-600(placeholder="" type="password" name="paswword" )
+					div
+						label.block.text-sm.uppercase.text-gray-500.font-bold.mb-3.rounded-md(for="mail") Repite Contraseña  
+						input#password.w-full.px-3.py-2.border.border-gray-500.placeholder-pink-600(placeholder="" type="password" name="password" )
+					
+					input(class="w-full bg-purple-500 rounded-md text-white hover:bg-pink-700 py-3 cursor-pointer " type="submit" value="Crear Cuenta")
+					//- =============================  Links 
+					div(class="flex items-center justify-between")
+						a(class="text-gray-400 text-xs")(href="/auth/login") ¿Ya tienes Cuenta?
+						

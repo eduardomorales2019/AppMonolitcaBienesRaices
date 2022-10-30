@@ -1,24 +1,25 @@
-// const express = require("express");
-
-// habilitando en package.json() y llamando con import modules.--
+// se uso la anexion en package.json para implementar.---
 import express from "express";
 import Userroutes from "./routes/usuario.js";
-// llamar la app- servidor, proyect. contiene la informacion del servidor de express.
+
 const app = express();
 
-// hablilitar pug que solo seria en este proyecto para una aplicacion monolitica.  ()quiero usar pug y especificar la carpeta en donde estan las vistas. !! USE SET....
+// == HABILITAR PUG==
 
 app.set("view engine", "pug");
 app.set("/", "./views");
 
-// Routas====== use== busca todas las rutas  intead get..
-// TAMBIEN FUNCIONA PARA MUCHAS COSAS, EL APP.USE()-- ES EL MIDLEWARE.. .
-// app.get("/", routes); // SOL USA LA RUTA PRINCIPAL.
+//  == CARPETA PUBLICA ==
+app.use(express.static("public"));
+// == RUTAS ==
+
+// app.get("/", routes); // SOLO USA LA RUTA PRINCIPAL.  pero ahora  se hara por secciones o una por una
+
 app.use("/auth", Userroutes);
 
 // ==========
 
-// definir puerto.
+// == DEFINIR PUERTO =
 const port = 9000;
 
 app.listen(port, () => {
