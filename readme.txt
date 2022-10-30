@@ -22,3 +22,7 @@ en el packagejson=== usar el type: "module" y se habilitan.
 	=== con el ORM 
 	
 	 dependencias. npm i sequelize mysql2
+
+	 ==== depenencias para validar inserciones de bd. 
+
+	 npm express-validator. 

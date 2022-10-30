@@ -6,15 +6,22 @@ import db from "./config/config.js";
 // === CREAR LA APP==
 const app = express();
 
+//== HABILITAR LECTURA DE DATOS DE FORMULARIO
+
+app.use(express.urlencoded({ extended: true }));
+
 //   HABILATAR LA BASE DE DATOS.
+// =========================================================================
 
 try {
   await db.authenticate();
+  db.sync();
   console.log("conexion exitosa a la base de datos ");
 } catch (error) {
   console.log(error);
 }
 
+// =========================================================================
 // == HABILITAR PUG==
 
 app.set("view engine", "pug");
