@@ -26,3 +26,7 @@ en el packagejson=== usar el type: "module" y se habilitan.
 	 ==== depenencias para validar inserciones de bd. 
 
 	 npm express-validator. 
+
+	 npm i bcrypt  para hacer un hash de la contraseña 
+
+	 npm nodemailer...... y mailtrap para probar lo emails qiue llguen!! antes de hacerlo en msp hsoting normal. 

@@ -38,7 +38,7 @@ app.use("/auth", Userroutes);
 // ==========
 
 // == DEFINIR PUERTO =
-const port = 9000;
+const port = process.env.PORT || 9000;
 
 app.listen(port, () => {
   console.log(`servidor en puerto ${port}`);

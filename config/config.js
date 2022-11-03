@@ -1,3 +1,5 @@
+// ESTA ES LA INSTANCIA DE LA BASE DATPS !!! DB.-----
+
 import { Sequelize } from "sequelize";
 
 // MUY IMPORTANTE  PONER ESTO PARA PODER VER VARIABLES DE ENTORNO !
